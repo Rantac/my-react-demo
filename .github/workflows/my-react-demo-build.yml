@@ -46,13 +46,3 @@ jobs:
       with:
        name: react-app-demo-artifact
 
-      
-    - name: Sent Deploy package to Server 
-    - uses: garygrossgarten/github-action-scp@v0.8.0
-      with:
-        local: /home/runner/work/react-app-demo-artifact/react-app-demo-artifact
-        remote: /home/react-app-demo/
-        host: ${{ secrets.APP_React_HOST }} 
-        username: ${{ secrets.APP_React_USERNAME }}  
-        password: ${{ secrets.APP_React_PASSWORD }} 
-        port: 22
