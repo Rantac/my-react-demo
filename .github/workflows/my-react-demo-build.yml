@@ -50,7 +50,7 @@ jobs:
     - name: Sent Deploy package to Server 
       uses: garygrossgarten/github-action-scp@v0.8.0
       with:
-        local: /home/runner/work/react-app-demo-artifact/react-app-demo-artifact
+        local: /home/runner/work/my-react-demo/my-react-demo
         remote: /home/ubuntu/react-app-demo/
         host: ${{ secrets.APP_React_HOST }} 
         username: ${{ secrets.APP_React_USERNAME }}  
