@@ -51,7 +51,7 @@ jobs:
       uses: garygrossgarten/github-action-scp@v0.8.0
       with:
         local: /home/runner/work/react-app-demo-artifact/react-app-demo-artifact
-        remote: /home/react-app-demo/
+        remote: /home/ubuntu/react-app-demo/
         host: ${{ secrets.APP_React_HOST }} 
         username: ${{ secrets.APP_React_USERNAME }}  
         password: ${{ secrets.APP_React_PASSWORD }} 
